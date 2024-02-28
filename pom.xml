@@ -19,8 +19,7 @@
     <plugins>
         <plugin>
          
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
+            
             
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -29,6 +28,15 @@
                 <source>8</source> <!-- Set the Java source compatibility level -->
                 <target>8</target> <!-- Set the Java target compatibility level -->
             </configuration>
+        </plugin>
+    </plugins>
+</build>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.10.0.2594</version>
         </plugin>
     </plugins>
 </build>
